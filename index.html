@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b0813">
     <meta name="description" content="YubaSoft is an independent software development organization building tools, applications, and experimental projects.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>YubaSoft — Software, thoughtfully made</title>
     <style>
       :root {
@@ -64,16 +65,10 @@
         text-decoration: none;
       }
 
-      .brand-mark {
-        display: grid;
-        width: 2rem;
-        aspect-ratio: 1;
-        place-items: center;
-        border-radius: 0.65rem;
-        background: var(--accent);
-        color: var(--background);
-        font-size: 1.1rem;
-        font-weight: 850;
+      .brand-logo {
+        width: 3rem;
+        height: 2rem;
+        object-fit: contain;
       }
 
       .nav-links {
@@ -383,7 +378,7 @@
   <body>
     <header class="site-header shell">
       <a class="brand" href="#" aria-label="YubaSoft home">
-        <span class="brand-mark" aria-hidden="true">Y</span>
+        <img class="brand-logo" src="logo.png" alt="">
         <span>YubaSoft</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
