@@ -51,7 +51,6 @@
         min-height: 88px;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid var(--line);
       }
 
       .brand {
@@ -104,9 +103,6 @@
 
       .hero {
         display: grid;
-        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-        align-items: center;
-        gap: 2rem;
         min-height: 570px;
         padding-block: 6rem 7rem;
       }
@@ -115,33 +111,13 @@
         max-width: 720px;
       }
 
-      .hero-logo {
-        display: block;
-        width: min(100%, 440px);
-        justify-self: end;
-        aspect-ratio: 3 / 2;
-        object-fit: contain;
-        filter: drop-shadow(0 1rem 2.5rem rgb(132 76 255 / 16%));
-        mix-blend-mode: screen;
-      }
-
       .eyebrow {
-        display: flex;
-        align-items: center;
-        gap: 0.65rem;
         margin: 0 0 1.4rem;
         color: var(--accent);
         font-size: 0.78rem;
         font-weight: 700;
         letter-spacing: 0.13em;
         text-transform: uppercase;
-      }
-
-      .eyebrow::before {
-        width: 1.6rem;
-        height: 1px;
-        background: currentColor;
-        content: "";
       }
 
       h1,
@@ -336,14 +312,7 @@
 
       @media (max-width: 760px) {
         .hero {
-          grid-template-columns: 1fr;
           min-height: 500px;
-        }
-
-        .hero-logo {
-          width: min(100%, 360px);
-          justify-self: center;
-          margin-top: -1rem;
         }
 
         .project-grid {
@@ -439,7 +408,6 @@
             </a>
           </div>
         </div>
-        <img class="hero-logo" src="logo.png" alt="YubaSoft logo featuring an orbital Y and YubaSoft wordmark">
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
